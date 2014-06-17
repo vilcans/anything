@@ -3,6 +3,8 @@ anything
 
 A Python constant that considers itself equal to everything else. Useful for unit testing and more.
 
+::
+
     >>> Anything == 42
     True
     >>> 'hello' == Anything
@@ -10,7 +12,7 @@ A Python constant that considers itself equal to everything else. Useful for uni
 
 You can use it to check that specific values in a data structure
 have a value, but it doesn't matter what they are,
-for example in a unit test:
+for example in a unit test::
 
     >>> [1, 2, 3] == [1, Anything, 3]
     True
@@ -19,17 +21,17 @@ for example in a unit test:
     >>> {'x': 10} == {'x': 10, 'y': Anything}
     False
 
-Inequality behaves consistently with equality:
+Inequality behaves consistently with equality::
 
     >>> 'hello' != Anything
     False
 
-Even None is considered equal to Anything:
+Even None is considered equal to Anything::
 
     >>> Anything == None
     True
 
-And of course:
+And of course::
 
     >>> Anything == Anything
     True
@@ -39,7 +41,7 @@ Usage in Tests
 
 Example: Creating a user and making sure its data is returned.
 As the generated ID can be anything, we can't check it's value,
-but this makes sure it is returned.
+but this makes sure it is returned::
 
     import unittest
 
