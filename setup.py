@@ -7,13 +7,13 @@ with open('README.rst') as file:
 
 setup(
     name='anything',
-    version='0.0.1',
+    version='0.1.0',
     description=(
         'A Python constant that considers itself equal to everything else. '
         'Useful for unit testing and more.'
     ),
     author='Martin Vilcans',
-    author_email='anything@librador.com',
+    author_email='martin@librador.com',
     url='https://github.com/vilcans/anything',
     py_modules=['anything'],
     license='MIT',
