@@ -1,9 +1,9 @@
 anything
 ========
 
-A Python constant that considers itself equal to everything else. Useful for unit testing and more.
+Defines the `Anything` and `Something` constants.
 
-::
+`Anything` compares true with any other object::
 
     >>> Anything == 42
     True
@@ -31,9 +31,37 @@ Even None is considered equal to Anything::
     >>> Anything == None
     True
 
-And of course::
+If you want to make sure that a value is not None, use `Something`
+instead::
+
+    >>> Something == None
+    False
+    >>> Something == 1
+    True
+    >>> 1 == Something
+    True
+    >>> Something != None
+    True
+    >>> Something != 'foo'
+    False
+
+`Something` only checks for None specifically, i.e. it does not accept any
+falsy value::
+
+    >>> Something == False
+    True
+    >>> Something != False
+    False
+
+Equality between the two constants works as you probably expect::
 
     >>> Anything == Anything
+    True
+    >>> Something == Something
+    True
+    >>> Anything == Something
+    True
+    >>> Something == Anything
     True
 
 Usage in Tests
