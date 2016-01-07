@@ -63,7 +63,7 @@ True
 True
 """
 
-__all__ = ['Anything']
+__all__ = ['Anything', 'Something']
 
 
 class AnythingType(object):
