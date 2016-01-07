@@ -1,2 +1,4 @@
 MANIFEST
 anything.egg-info/
+dist/
+*.pyc
