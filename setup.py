@@ -7,7 +7,7 @@ with open('README.rst') as file:
 
 setup(
     name='anything',
-    version='0.2.0',
+    version='0.2.1',
     description=(
         'Python constants that consider themselves equal to everything else. '
         'Useful for unit testing and more.'
